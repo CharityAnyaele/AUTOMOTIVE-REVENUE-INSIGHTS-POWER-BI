@@ -1,7 +1,7 @@
 # Automotive-Revenue-and-Insights-Dashboard
 This project presents an Automotive Revenue & Customer Insights Dashboard developed using Power BI. The analysis focuses on vehicle purchases, customer demographics, and revenue trends across multiple automotive brands. Power BI was used not only for visualization but also for all data preparation and transformation.
 
-The data cleaning process was performed in Power Query, where inconsistent formats, invalid values, and missing fields were corrected to ensure a reliable dataset. New time-based fields—Month and Year—were extracted from the main date column to enable deeper trend analysis and interactive filtering. Additionally, a new calculated column for Revenue was created by multiplying the unit price by the number of items purchased, providing a clear view of financial performance across categories.
+The data cleaning process was performed in Power Query, where inconsistent formats, invalid values, and missing fields were corrected to ensure a reliable dataset. New timeNbased fields such as Month and Year were extracted from the main date column to enable deeper trend analysis and interactive filtering. Additionally, a new calculated column for Revenue was created by multiplying the unit price by the number of items purchased, providing a clear view of financial performance across categories.
 
 Using these prepared fields, the dashboard highlights total revenue, customer age groups, monthly purchase behavior, gender distribution, and model-level performance patterns. Interactive filters allow users to explore insights across different customer segments, years, and car brands.
 
