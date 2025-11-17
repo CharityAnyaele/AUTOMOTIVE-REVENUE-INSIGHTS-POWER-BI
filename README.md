@@ -5,7 +5,6 @@ The data cleaning process was performed in Power Query, where inconsistent forma
 
 Using these prepared fields, the dashboard highlights total revenue, customer age groups, monthly purchase behavior, gender distribution, and model-level performance patterns. Interactive filters allow users to explore insights across different customer segments, years, and car brands.
 
-Overall, this dashboard offers a clean, well-structured, and insight-driven view of sales performance, built end-to-end within Power BI—from data cleaning to modeling and final reporting.
 
 #POWER QUERY M CODE(Data cleaning + Month, Year + Revenue column)
 
@@ -72,3 +71,65 @@ let
     SortedRows = Table.Sort(AddMonth, {{"Purchase Date", Order.Ascending}})
 in
     SortedRows
+# Key challenges included:
+•	No visibility into which car models or brands generate the highest revenue
+	•	Difficulty identifying seasonal trends because dates were not structured
+	•	No breakdown of purchases by age groups or gender
+	•	Absence of a unified metric for total revenue, since it wasn’t provided in the dataset
+	•	Inability to analyze performance across different periods (monthly, yearly)
+	•	Manual reporting was slow, inconsistent, and lacked interactive insights
+
+As a result, decision-makers could not determine:
+	•	Where revenue was coming from
+	•	Which customer segment to target
+	•	Which models to promote or stock more of
+	•	How performance changed over time
+
+
+#  Business Goals
+
+The primary business objectives of this project were:
+	1.	Improve sales visibility by creating an automated analytics dashboard
+	2.	Understand customer demographics (age & gender buying patterns)
+	3.	Track total revenue and identify high-performing models
+	4.	Analyze monthly and yearly sales trends for forecasting
+	5.	Enable interactive filtering to support data-driven decisions
+	6.	Reduce manual reporting time and improve accuracy
+
+
+# Business Solution
+
+To address the business problems and meet the goals:
+
+ 1. Data Cleaning & Preparation in Power BI
+	•	Standardized inconsistent fields (brand, model, gender)
+	•	Removed invalid or erroneous rows
+	•	Ensured correct data types
+
+ 2. Feature Engineering
+
+Created new analytical columns to improve insights:
+	•	Year (extracted from full date)
+	•	Month (extracted for trend analysis)
+	•	Revenue = Price × Quantity Purchased
+
+ 3. Interactive Dashboard Development
+
+Built a fully interactive Power BI dashboard featuring:
+	•	Total revenue
+	•	Sales by year
+	•	Sales by month
+	•	Purchases by gender and age group
+	•	Top-performing car models
+	•	Filters for deeper exploration (brand, gender, year, model)
+
+ 4. Business Insights
+
+The dashboard now helps the business:
+	•	Identify which models to promote
+	•	Understand customer buying patterns
+	•	Allocate marketing budgets effectively
+	•	Forecast demand based on monthly/yearly trends
+	•	Improve inventory planning
+
+   Overall, this dashboard offers a clean, well-structured, and insight-driven view of sales performance, built end-to-end within Power BI—from data cleaning to modeling and final reporting.
